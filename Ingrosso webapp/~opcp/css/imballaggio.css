@@ -1,0 +1,67 @@
+﻿body {
+    
+}
+
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 3vw;
+}
+
+input[type=date] {
+    border: 0px;
+    width: 15vw;
+    height: 3vw;
+    font-size: 2vw;
+}
+
+input[type=text] {
+    border: 0px;
+    width: 8vw;
+    height: 3vw;
+    font-size: 2vw;
+}
+
+label {
+    font-size: 200%;
+}
+
+.intestazioni {
+
+}
+
+.rinfresco {
+
+}
+
+.biglietto {
+
+}
+
+.operatori {
+  width: 10%;
+}
+
+.clienti {
+  width: 40%;
+}
+
+.preparatori {
+    padding: 6px;  
+}
+
+.ordinativi2 {
+    padding: 6px;
+}
+
+button {
+    width: 9vw;
+    height: 4vw;
+    font-size: 1vw;
+}
+
+.comandi{
+    width: 150px;
+    text-align: center;
+}

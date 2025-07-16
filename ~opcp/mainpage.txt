@@ -1,0 +1,51 @@
+    <input type="hidden" name="loginid" id="loginid" value="<?php echo $_REQUEST["loginid"]; ?>">
+    <ul id="tabs">
+<?php
+ try{
+  $user = $_REQUEST['username']; // account con cui si è collegato l'utente
+  include("dbconfig.php");
+  // connect to the database
+  $db = mysqli_connect($dbhost, $dbuser, $dbpassword)
+  or die("Connection Error: " . mysqli_error($db));
+  mysqli_select_db($db,$database) or die("Error conecting to db.");
+      
+  echo "      <LI><A id=\"1\" href=\"javascript:loadPageToDiv2('generale.htm','#pagina',1);\">Generale</A></LI>\r\n";
+  echo "      <LI><A id=\"2\" class=\"ordinativi\" href=\"javascript:loadPageToDiv2('clienti.php','#pagina',2);\">Clienti</A></LI>\r\n";
+  echo "      <LI><A id=\"3\" class=\"ordinativi\" href=\"javascript:loadPageToDiv2('listiniprezzi.php','#pagina',3);\">Listini Prezzi</A></LI>\r\n";
+  echo "      <LI><A id=\"4\" class=\"ordinativi\" id=\"ordtab\" href=\"javascript:loadPageToDiv2('schemicliente.php','#pagina',4);\">Schemi Ordine</A></LI>\r\n";
+  echo "      <LI><A id=\"5\" class=\"tabelle\" href=\"javascript:loadPageToDiv2('tabelleprogetto.php','#pagina',5);\">Tabelle</A></LI>\r\n";
+  /* passato in tabelleprogetto.php il 27/06/2024
+  echo "      <LI><A id=\"1\" class=\"tabelle\" href=\"javascript:loadPageToDiv('gruppiprodotto.php','#pagina');\">Gruppi Prodotto</A></LI>\r\n";
+  echo "	  <LI><A id=\"1\" class=\"tabelle\" href=\"javascript:loadPageToDiv('prodotti.php?user=$user','#pagina');\">Prodotti</A></LI>\r\n";
+  echo "	  <LI><A id=\"1\" class=\"tabelle\" href=\"javascript:loadPageToDiv('intermediari.php?user=$user','#pagina');\">Intermediari</A></LI>\r\n";
+  echo "	  <LI><A id=\"1\" class=\"tabelle\" href=\"javascript:loadPageToDiv('responsabili.php?user=$user','#pagina');\">Responsabili</A></LI>\r\n";
+  echo "	  <LI><A id=\"1\" class=\"tabelle\" href=\"javascript:loadPageToDiv('credenziali.php?user=$user','#pagina');\">Credenziali</A></LI>\r\n";
+  echo "	  <LI><A id=\"1\" class=\"tabelle\" href=\"javascript:loadPageToDiv('statoordine.php','#pagina');\">Tab. Stato Ordine</A></LI>\r\n";
+  echo "	  <LI><A id=\"1\" class=\"tabelle\" href=\"javascript:loadPageToDiv('autorizzasuperospesa.php','#pagina');\">Autorizzazioni Supero Spesa</A></LI>\r\n";
+  */
+  echo "	  <LI><A id=\"6\" class=\"produzione\" href=\"javascript:loadPageToDiv2('ordinicliente.php','#pagina',6);\">Ordini Clienti</A></LI>\r\n";
+  echo "	  <LI><A id=\"7\" class=\"produzione\" href=\"javascript:loadPageToDiv2('produzioneprodotti.php','#pagina',7);\">Produzione</A></LI>\r\n";
+  echo "	  <LI><A id=\"8\" class=\"imballaggio\" href=\"javascript:loadPageToDiv2('imballaggio.php','#pagina',8);\">Imballaggio</A></LI>\r\n";
+  // echo "	  <LI><A id=\"9\" class=\"imballaggio\" href=\"javascript:loadPageToDiv2('consegne.php','#pagina',9);\">Consegne</A></LI>\r\n";
+  echo "	  <LI><A id=\"10\" class=\"contabilita\" href=\"javascript:loadPageToDiv2('bolleconsegna.php','#pagina',10);\">Bolle Consegna</A></LI>\r\n";
+  echo "	  <LI><A id=\"11\" class=\"contabilita\" href=\"javascript:loadPageToDiv2('fatturazione.php','#pagina',11);\">Fatturazione</A></LI>\r\n";
+  echo "	  <LI><A id=\"12\" class=\"contabilita\" href=\"javascript:loadPageToDiv2('fatture.php','#pagina',12);\">Fatture</A></LI>\r\n";
+  echo "	  <LI><A id=\"99\" href=\"javascript:loadPageToDiv2('generale.htm','#pagina',99);\">...</A></LI>\r\n";  
+  // tab finale
+  echo "	  <LI><A id=\"13\" href=\"uscito.php\">Esci</A></LI>\r\n";
+  mysqli_close($db);
+  }
+  catch(Exception $e){
+     header('HTTP/1.1 500 Internal Server Error');
+     header('Content-Type: application/json; charset=UTF-8');
+     die(json_encode(array('message' => 'ERROR: '.$e->getMessage(), 'code' => error_reporting())));
+  }
+?>
+    </ul>
+    <div id="pagina" class="sectionContent">
+    <h1>Informazioni Generali</h1>
+    Questa pagina fornisce informazioni sull'applicazione Operatori per Cesari Pasticceria
+    </div>
+<script>
+  $(document).ready(function (){ setTimeout(function(){loadPageToDiv('ordini.php','#pagina');}, 5000)});
+</script>

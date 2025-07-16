@@ -1,0 +1,41 @@
+html, body {
+	margin: 0;			/* Remove body margin/padding */
+	padding: 0;
+	overflow: auto;	/* Remove scroll bars on browser window */	
+    font-size: 75%;
+}
+
+.rowDetails {
+    position: relative;
+	left:0; 
+	top: 0; 
+	padding: 0; 
+	font-size:15px;
+	font-family:"Arial";
+	font-style: "normal";
+	border:1px solid cyan;
+    border-collapse:collapse;	
+}
+.rowDetails th {
+    align: center;
+    border:1px solid black;
+    border-collapse:collapse;
+	background: AliceBlue;
+    padding: 5px 5px 5px 5px;
+}
+
+#Campo {
+    width: 100px;
+}
+
+#Valore {
+    width: 615px;
+}
+
+.rowDetails td {
+    border:1px solid black;
+    border-collapse:collapse;
+	background: white;
+    padding: 5px 5px 5px 5px;
+
+}

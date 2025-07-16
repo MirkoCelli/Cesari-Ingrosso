@@ -1,0 +1,15 @@
+<Project Sdk="Devsense.Php.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>6d88ab0a-6758-43fb-93a0-380e97c7a8bc</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnvName>PHPDev</EnvName>
+    <RuntimeVersion>8.2</RuntimeVersion>
+    <RootNamespace>OperatoriPasticceria</RootNamespace>
+    <WebRoot />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="imballaggiopage.js" />
+    <Content Remove="schemiordine.php" />
+  </ItemGroup>
+</Project>

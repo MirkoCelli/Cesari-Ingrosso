@@ -1,0 +1,125 @@
+body { font-size: 100%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+ul#tabs li { display: inline; }
+ul#tabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; }
+ul#tabs li a:hover { background-color: #f1f0ee; }  
+div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee; position: absolute; left: 0px; top: 50px; width: 800px; height: 580px; overflow: auto; }
+div.tabContent.hide { display: none; }
+ 
+ul#subtabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+ul#subtabs li { display: inline; }
+ul#subtabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; }
+ul#subtabs li a:hover { background-color: #f1f0e0; }
+ul#subtabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }	  	  
+div.sectionContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0e0; position: absolute; left: 10px; top: 80px; width: 1850px; height: 800px; overflow: auto; }
+div.sectionContent.hide { display: none; }
+
+div.sectionContent2 {
+	border: 1px solid #c9c3ba;
+	padding: 0.5em;
+	background-color: #f1f0e0;
+	position: absolute;
+	left: 10px;
+	top: 80px;
+	width: 1800px;
+	height: 700px;
+	overflow: auto;
+}
+
+div.sectionContent2.hide {
+	display: none;
+}	  
+	  
+ul#clientetabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+ul#clientetabs li { display: inline; }
+ul#clientetabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; }
+ul#clientetabs li a:hover { background-color: #f1f0e0; }
+ul#clientetabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }	  	  
+div.clienteContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0e0; }
+div.clienteContent.hide { display: none; }
+
+ul#tabelletabs { list-style-type: none; margin: 15px 0px 0px 0px; padding: 0 0 0.7em 0; }
+ul#tabelletabs li { display: inline; }
+ul#tabelletabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.5em 0.5em 0.5em 0.9em; text-decoration: none; }
+ul#tabelletabs li a:hover { background-color: #f1f0e0; }
+ul#tabelletabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }	  	  
+
+ul#tabelle2tabs { list-style-type: none; margin: 10px 0px 0px 0px; padding: 0 0 0.7em 0; }
+ul#tabelle2tabs li { display: inline; }
+ul#tabelle2tabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.5em 0.5em 0.5em 0.9em; text-decoration: none; }
+ul#tabelle2tabs li a:hover { background-color: #f1f0e0; }
+ul#tabelle2tabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }	  	  
+
+ul#schedatabs { list-style-type: none; margin: 15px 0px 0px 0px; padding: 0 0 0.7em 0; }
+ul#schedatabs li { display: inline; }
+ul#schedatabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.5em 0.5em 0.5em 0.9em; text-decoration: none; }
+ul#schedatabs li a:hover { background-color: #f1f0e0; }
+ul#schedatabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }	
+
+div.tabelleContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0e0; width: 1800px; height: 700px; }
+div.tabelleContent.hide { display: none; }
+
+div.tabelleContent2 {
+	border: 1px solid #c9c3ba;
+	padding: 1.5em;
+	background-color: #f1f0e0;
+	width: 1200px;
+	height: 700px;
+}
+
+div.tabelleContent2.hide {
+	display: none;
+}
+
+table#loginTab{ margin: 60px; padding: 20 20 20 20; border: 5px solid #c9c3ba; background-color: #f1f0ee;}
+
+.generale { text-align: right; width: 40px; padding: 10; }
+
+td.generale { padding: 10px; }
+table.generaleTab { position: absolute; left: 30px; top: 5 px; }
+
+/* colorazione differenziata per sezioni delle voci di menù */
+ul#tabs li a.ordinativi {
+	background-color: #ffe0e0;
+} 
+
+ul#tabs li a.ordinativi:hover {
+	background-color: #fff0f0;
+}
+
+a.evidenzia {
+   filter: brightness(75%);
+   height: 150px;
+}
+
+ul#tabs li a.tabelle {
+	background-color: #afe0ff;
+}
+
+ul#tabs li a.tabelle:hover {
+	background-color: #afefff;
+}
+
+ul#tabs li a.produzione {
+	background-color: #d0ffd0;
+}
+
+ul#tabs li a.produzione:hover {
+	background-color: #efffef;
+}
+
+ul#tabs li a.imballaggio {
+	background-color: #a0efd0;
+}
+
+ul#tabs li a.imballaggio:hover {
+    background-color: #afefef;
+}
+
+ul#tabs li a.contabilita {
+	background-color: #ffffd0;
+}
+
+ul#tabs li a.contabilita:hover {
+	background-color: #ffffef;
+}

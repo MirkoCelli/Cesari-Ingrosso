@@ -1,0 +1,109 @@
+html * {
+    font-family: Arial !important;
+}
+
+body {
+    background-color: #e8f6fd;
+    display: flex;
+}
+
+.logocp {
+    max-width: 200px;
+    max-height: 200px;
+    text-align: center;
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+/*
+@font-face {
+    font-family: "ITC Blair Medium";
+    src: url(https://fontsgeek.com/fonts/blair-itc-medium) format("truetype");
+}
+
+.customfont {
+    font-family: "ITC Blair Medium";
+    color: #f08232;
+    text-align: center;
+    font-size: 70px;
+}
+
+.customfontsmall {
+    font-family: "ITC Blair Medium";
+    color: #f08232;
+    text-align: center;
+    font-size: 14px;
+}
+*/
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+table {
+    border-spacing: 3vw;
+    background-color: transparent;
+}
+
+td {
+    height: 8vw; /* 100px; */
+    width: 10vw; /* 200px; */     
+}
+
+.container {
+    background-color: #e8f6fd;
+    // mettere il background-color se non lo si vuole trasparente padding: 30px;
+    margin: auto;
+}
+
+.titoli   {
+   color: #808080; 
+   font-size: 4vw; /*200%;*/
+}
+
+.errori {
+   color: red;
+   font-size: 200%;
+}
+
+.edituser {
+    color: black;
+    background-color: #e8f6fd;
+    font-size: 5vw; /* 200%;*/
+    width: 50vw;
+    border: 0.5px solid #f08232;
+}
+
+.editpws {
+    color: black;
+    background-color: #e8f6fd;
+    font-size: 5vw; /*200%;*/
+    width: 50vw;
+    border: 0.5px solid #f08232;
+}
+
+.bottoni {
+    color: #808080;
+    background-color: #f3e7d9;
+    width: 25vw;
+    height: 8vw;
+    font-size: 4vw;
+    border: 2px solid #f3e7d9;
+    border-radius: 100px;
+}
+
+.cancelbtn {
+    color: red;
+    width: 30vw;
+    height: 9vw;
+    font-size: 6vw; /* 200%;*/
+}

@@ -1,0 +1,87 @@
+﻿html * {
+    font-family: Arial !important;
+}
+
+body {
+    background-color: #e8f6fd;
+    display: flex;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+.Intestazioni {
+    height: 1vw; /* 10%;*/
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Intesta {
+    width: 90%;
+}
+
+.Contenuti {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 10vw; /* 20%;*/
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.MenuComandi {
+    height: 8vw; /* 10%;*/
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.MenuComandi a {
+    font-size: 2vw;
+}
+
+table {
+    width: 60%;
+    font-size: 100%;
+}
+
+td {
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 250px;
+    height: 100px;
+    font-size: 200%;
+}
+
+.clona {
+    width: 10vw;
+    height: 5vw;
+    font-size: 3vw;
+}
+
+.titoli {
+    font-size: 3vw;
+}

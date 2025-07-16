@@ -1,0 +1,3 @@
+https://mailtrap.io/blog/phpmailer/ per le istruzioni per l'installazione del PHPMailer.
+
+Robert Gasperoni 16/07/2024 08.00

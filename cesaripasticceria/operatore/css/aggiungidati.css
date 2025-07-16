@@ -1,0 +1,102 @@
+﻿body {
+    background-color: ghostwhite;
+    display: flex;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+.Contenuti {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 2vw; /* 20%;*/
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+table {
+    width: 90%;
+    border: 0px solid black;
+}
+
+td {
+    border: 0px solid black;
+}
+
+.griglia td {
+    border: 2px solid black;
+    padding: 10px 10px 10px 10px;
+}
+
+.bottone {
+    width:  10vw;
+    height: 3vw;
+    font-size: 1vw;
+}
+
+.aggiungidati table{
+    width: 100%;
+}
+
+.codprod td {
+    width: 10vw;
+}
+
+.unmis td {
+    width: 4vw;
+}
+
+.quant td {
+    width: 10vw;
+}
+
+.desc td {
+    width: 40vw;
+}
+
+.prezzo td {
+    width: 12vw;
+}
+
+.tot td {
+    width: 12vw;
+}
+
+.pulsante td {
+    width: 10vw;
+}
+
+.dettagli label{
+    font-size: 2vw;
+}
+
+.titoli label {
+    font-size: 1vw;
+}
+
+input[type=number] {
+    height: 3vw; /*50px;*/
+    /*line-height: 1vw; / * 50px;*/
+    font-size: 2vw;
+    padding: 0 8px;
+    width: 28vw;
+}
+
+select {
+    height: 3vw; /*50px;*/
+    /*line-height: 1vw; / * 50px;*/
+    font-size: 2vw;
+    padding: 0 8px;
+    width: 28vw;
+}

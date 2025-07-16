@@ -1,0 +1,139 @@
+﻿body {
+    background-color: ghostwhite;
+    display: flex;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+.Intestazioni {
+    height: 10%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Contenuti {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.MenuComandi {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    align-content: space-evenly;
+    text-decoration: none;
+}
+
+td {
+    
+    width: 50px;
+    height: 50px;
+    
+    /*
+    width: 5%;
+    height: 25%;
+    */
+    /*
+    min-width: 5px;
+    min-height: 5px;
+    max-width: 500px;
+    max-height: 500px;
+    */
+    
+    color: #000;
+    font-size: 150%;
+    /*padding: 5px 5px 5px 5px;*/
+    margin-top: 20px;
+    /*padding: 1px;*/
+    background-color: #6af;
+}
+
+
+table {
+    width: 70%;
+    border-spacing: 5px;
+    border-collapse: separate;    
+}
+
+/* spin box  */
+
+
+input[type=number] {
+    height: 50px;
+    line-height: 50px;
+    font-size: 2vw;
+    padding: 0 8px;
+}
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        opacity: 1;
+        width: 64px;
+        height: 64px;
+        padding: 4px;
+    }
+
+
+.elencomesi {
+    font-size: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 8px;
+}
+
+.bottone {
+    font-size: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 8px;
+}
+
+.nome_mese {
+    font-size: 200%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 8px;
+}
+
+.day {
+    text-align: right;
+    padding: 0 5px;
+}
+
+.week {
+    background-color: #0ff;
+    text-align: center;
+    padding: 0 5px;
+}

@@ -1,0 +1,157 @@
+﻿body {
+    background-color: ghostwhite;
+    display: flex;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+a {
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    align-content: space-evenly;
+    text-decoration: none;
+}
+
+.Intestazioni {
+    height: 1vw; /* 10%;*/
+    width: 70%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Contenuti {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 10vw; /* 20%;*/
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.MenuComandi {
+    height: 8vw; /* 10%;*/
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.MenuComandi a {
+    font-size: 2vw;
+}
+
+.titolo{
+   font-size: 2vw;
+}
+
+td {
+    /*
+    width: 250px;
+    height: 100px;
+    */
+    width: 5%;
+    height: 25%;
+    min-width: 5px;
+    min-height: 50px;
+    max-width: 500px;
+    max-height: 500px;
+    color: #000;
+    /*font-size: 200%;*/
+    font-size: 2vw;
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #6af;
+}
+
+.giorni {
+    background-color: #fff;
+    text-align: center;
+}
+
+.date {
+    background-color: #fdd;
+    text-align: center;
+}
+
+.intesta {
+    width: 10%;
+    height: 1vw; /*100px;*/
+    background-color: #fff; /*ghostwhite;    */
+}
+
+.intesta2 {
+    width: 10%;
+    height: 1vw; /*100px;*/
+    /* background-color: #fff;*/
+    background-color: #afb;
+    ; /*ghostwhite;    */
+}
+
+.intestac {
+    width: 40%;
+    height: 1vw; /*100px;*/
+    min-width: 600px;
+    background-color: #6af; /*ghostwhite;    */
+}
+
+table {
+    width: 90%;
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+input[type=date] {
+    height: 3vw; /*50px;*/
+    line-height: 4vw; /*50px;*/
+    font-size: 2vw;
+    padding: 0 8px;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+        opacity: 1;
+        width: 2vw; /* 64px; */
+        height: 2vw; /* 64px;*/
+        padding: 4px;
+}
+
+.bottone {
+    font-size: 1vw; /* 100%; */
+    height: 4vw; /*50px;*/*/
+    line-height: 2vw; /* 50px;*/
+    padding: 0 8px;
+}
+
+.tabdati td {
+    vertical-align: top;
+}
+
+.dettagli.table {
+    vertical-align: top;
+}
+.dettagli td {
+    font-size: 0.8vw;
+}

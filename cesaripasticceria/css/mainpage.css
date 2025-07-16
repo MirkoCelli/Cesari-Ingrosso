@@ -1,0 +1,586 @@
+﻿html * {
+    font-family: Arial !important;
+}
+
+body {
+    background-color: #e8f6fd;
+    display: flex;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+
+    div {
+        background-color: #e8f6fd;
+    }
+
+    .Intestazioni {
+        height: 25%;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 150%; 
+        text-align: center;
+    }
+
+    .Contenuti {
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        right: 0;
+    }
+
+    .MenuComandi {
+        height: 16%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 150%;
+        text-align: center;
+    }
+
+
+    td {
+        width: 250px;
+        height: 80px;
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        background-color: #e8f6fd;
+    }
+
+
+    table {
+        width: 90%;
+        border-spacing: 30px;
+        border-collapse: separate;
+    }
+
+    a {
+        color: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-content: space-evenly;
+        text-decoration: none;
+    }
+
+    .annuale {
+        /*background-color: #faf;*/
+        background-color: #f3e7d9;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f3e7d9;
+        border-radius: 100px;
+    }
+
+    .mensile {
+        /*background-color: #6ff;*/
+        background-color: #f3e7d9;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f3e7d9;
+        border-radius: 100px;
+    }
+
+    .settimanale {
+        /*background-color: #6a0;*/
+        background-color: #f3e7d9;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f3e7d9;
+        border-radius: 100px;
+    }
+
+    .giornaliero {
+        /*background-color: #eef;*/
+        background-color: #f3e7d9;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f3e7d9;
+        border-radius: 100px;
+    }
+
+    .altreopzioni {
+        /*background-color: #0af;*/
+        background-color: #f3e7d9;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f3e7d9;
+        border-radius: 100px;
+        width: 25%;
+    }
+
+    .esci {
+        /*background-color: #697;*/
+        background-color: #f08232;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f08232;
+        border-radius: 100px;
+        width: 75%;
+    }
+    .cdate {
+        float: left;
+        margin-left: 0px;
+        font-size: 4vw;
+    }
+
+    .ctime {
+        float: right;
+        margin-right: 0px;
+        font-size: 4vw;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ef7e86; 
+        // red;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #9cca87; 
+        // lime;
+        // #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #9cca87;  
+        //lime;
+        //#2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .cursore {
+        background-color: #e8f6fd;
+    }
+
+    .testo_cursore {
+        background-color: #e8f6fd;
+        width: 80%;
+    }
+
+    .tab_cursore {
+        width: 100%;
+    }
+
+    .verde {
+        // background-color: lime;
+        background-color: #e8f6fd;
+        color: green;
+    }
+
+    .rosso {
+        background-color: #e8f6fd;
+        color: red;
+    }
+
+    .settimanale2 {
+        color: #000;
+        font-size: 4vw; /*150%;*/
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        height: 60px;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+
+    div {
+        background-color: #e8f6fd;
+    }
+
+    .Intestazioni {
+        height: 15%;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .Contenuti {
+        height:auto;
+        width: 100%;
+        position: absolute;
+        top: 16%;
+        left: 0;
+        right: 0;
+    }
+
+    .MenuComandi {
+        height: 16%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 150%;
+        text-align: center;
+    }
+
+
+    td {
+        
+        width: 250px;
+        height: 80px;
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        background-color: #6af;
+    }
+
+
+    table {
+        width: 90%;
+        border-spacing: 30px;
+        border-collapse: separate;
+    }
+
+    a {
+        color: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-content: space-evenly;
+        text-decoration: none;
+        margin: 10px;
+
+    }
+
+    .annuale {
+        /*background-color: #dad;*/
+        background-color: #f3e7d9;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f3e7d9;
+        border-radius: 100px;
+    }
+
+    .mensile {
+        /* background-color: #6ff;*/
+        background-color: #f3e7d9;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f3e7d9;
+        border-radius: 100px;
+    }
+
+    .settimanale {
+        /* background-color: #6a0;*/
+        background-color: #f3e7d9;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f3e7d9;
+        border-radius: 100px;
+    }
+
+    .giornaliero {
+        /* background-color: #eef;*/
+        background-color: #f3e7d9;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f3e7d9;
+        border-radius: 100px;
+    }
+
+    .altreopzioni {
+        /* background-color: #0af;*/
+        background-color: #f3e7d9;
+        /*
+        width: 250px;
+        height: 100px;
+        */
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f3e7d9;
+        border-radius: 100px;
+    }
+
+    .esci {
+        /* background-color: #697;*/
+        background-color: #f08232;
+        color: #000;
+        font-size: 150%;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 2px solid #f08232;
+        border-radius: 100px;
+    }
+
+    .cdate {
+        float: left;
+        font-size: 4vw;
+    }
+
+    .ctime {
+        float: right;
+        margin-right: 0px;
+        font-size: 4vw;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ef7e86;
+        //red;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #9cca87; 
+        // lime;
+        // #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #9cca87;
+        //lime;
+        //#2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    
+    .cursore {
+        background-color: #e8f6fd;
+        width: 20%;
+    }
+
+    .testo_cursore {
+        background-color: #e8f6fd;
+        width: 80%;
+    }
+
+    .tab_cursore{
+        width: 100%;
+    }
+
+    .verde {
+        // background-color: lime;
+        background-color: #e8f6fd;
+        color: green;
+    }
+
+    .rosso {
+        background-color: #e8f6fd;
+        color: red;
+    }
+
+    .settimanale2 {
+        color: #000;
+        font-size: 4vw; /* 150%;*/
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        padding: 5px;
+        height: 60px;
+    }
+}
+
+.nota {
+    font-size: 4vw; /* 150%;*/
+}
+.page_loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    display: none;
+    margin-top: 20%;
+    margin-left: 40%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

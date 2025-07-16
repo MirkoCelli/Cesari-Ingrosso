@@ -1,0 +1,94 @@
+﻿body {
+    background-color: ghostwhite;
+    display: flex;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+.Intestazioni {
+    height: 1vw; /* 10%;*/
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Intesta {
+    width: 90%;
+}
+
+.Contenuti {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 10vw; /* 20%;*/
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.MenuComandi {
+    height: 8vw; /* 10%;*/
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+    opacity: 1;
+    background-color: #fff;
+}
+
+    .MenuComandi a {
+        font-size: 2vw;
+    }
+
+table {
+    width: 60%;
+    font-size: 100%;    
+}
+
+td {
+    /*width: 100%;*/
+    border: 1px solid;
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+input[type=submit] {
+    width: 250px;
+    height: 100px;
+    font-size: 200%;
+}
+
+input[type='text'] {
+    font-size: 200%;
+    font-family: monospace;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 10%;
+    height: 2em;
+}
+
+.qta {
+    font-size: 200%;
+}

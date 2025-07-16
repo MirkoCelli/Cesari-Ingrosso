@@ -1,0 +1,97 @@
+﻿body {
+    background-color: ghostwhite;
+    display: flex;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+.Intestazioni {
+    height: 0vw; /* 10%;*/
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Contenuti {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 1vw; /* 20%;*/
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.MenuComandi {
+    height: 2vw; /* 10%;*/
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.Contenuti table {
+    border: 2px solid;
+}
+
+.Contenuti td {
+    /*width: 30%;*/
+    border: 2px solid;
+}
+
+table {
+    border: 0px;
+    font-size: 100%;
+}
+td {
+    /*width: 20%;*/
+    border: 0px;
+    padding: 0px 5px 0px 0px;
+}
+
+.riepilogo table {
+    width: 100%;
+    border: 0;
+}
+
+.riepilogo td {
+    width: auto;
+    /*min-width: 100px;*/
+    border: 0px;
+    font-size: 0.75vw;
+}
+
+input[type=submit] {
+    width: 200px;
+    height : 100px;
+    font-size: 200%;
+}
+
+.refresh {
+    width: 200px;
+    height: 100px;
+    font-size: 200%;
+}
+
+.titolo {
+    font-size: 100%;
+}

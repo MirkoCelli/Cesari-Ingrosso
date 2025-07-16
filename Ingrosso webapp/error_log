@@ -1,0 +1,76 @@
+[30-Jul-2024 06:34:00 UTC] PHP Warning:  include(include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[30-Jul-2024 06:34:00 UTC] PHP Warning:  include(include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[30-Jul-2024 06:34:00 UTC] PHP Warning:  include(): Failed opening 'include/parametri.inc' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php on line 6
+[31-Jul-2024 06:29:11 UTC] PHP Warning:  include(include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[31-Jul-2024 06:29:11 UTC] PHP Warning:  include(include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[31-Jul-2024 06:29:11 UTC] PHP Warning:  include(): Failed opening 'include/parametri.inc' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php on line 6
+[31-Jul-2024 06:29:21 UTC] PHP Warning:  include(include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[31-Jul-2024 06:29:21 UTC] PHP Warning:  include(include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[31-Jul-2024 06:29:21 UTC] PHP Warning:  include(): Failed opening 'include/parametri.inc' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 12:25:25 UTC] PHP Warning:  include(include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 12:25:25 UTC] PHP Warning:  include(include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 12:25:25 UTC] PHP Warning:  include(): Failed opening 'include/parametri.inc' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 12:25:25 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /home/yo613xig/public_html/cesaripasticceria/funzioni.php:249
+Stack trace:
+#0 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(249): mysqli_connect()
+#1 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(38): ApriDatabase()
+#2 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(85): abilitatoUtente()
+#3 /home/yo613xig/public_html/ingrosso.php(12): controllatoken1()
+#4 {main}
+  thrown in /home/yo613xig/public_html/cesaripasticceria/funzioni.php on line 249
+[01-Aug-2024 12:25:29 UTC] PHP Warning:  include(include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 12:25:29 UTC] PHP Warning:  include(include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 12:25:29 UTC] PHP Warning:  include(): Failed opening 'include/parametri.inc' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 12:25:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /home/yo613xig/public_html/cesaripasticceria/funzioni.php:249
+Stack trace:
+#0 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(249): mysqli_connect()
+#1 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(38): ApriDatabase()
+#2 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(85): abilitatoUtente()
+#3 /home/yo613xig/public_html/ingrosso.php(12): controllatoken1()
+#4 {main}
+  thrown in /home/yo613xig/public_html/cesaripasticceria/funzioni.php on line 249
+[01-Aug-2024 12:27:46 UTC] PHP Warning:  include(/cesarepasticceria/include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 12:27:46 UTC] PHP Warning:  include(/cesarepasticceria/include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 12:27:46 UTC] PHP Warning:  include(): Failed opening '/cesarepasticceria/include/parametri.inc' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 12:27:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /home/yo613xig/public_html/cesaripasticceria/funzioni.php:249
+Stack trace:
+#0 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(249): mysqli_connect()
+#1 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(38): ApriDatabase()
+#2 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(85): abilitatoUtente()
+#3 /home/yo613xig/public_html/ingrosso.php(12): controllatoken1()
+#4 {main}
+  thrown in /home/yo613xig/public_html/cesaripasticceria/funzioni.php on line 249
+[01-Aug-2024 14:02:35 UTC] PHP Warning:  include(/cesarepasticceria/include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 14:02:35 UTC] PHP Warning:  include(/cesarepasticceria/include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[01-Aug-2024 14:02:35 UTC] PHP Warning:  include(): Failed opening '/cesarepasticceria/include/parametri.inc' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php on line 6
+[02-Aug-2024 05:22:05 UTC] PHP Warning:  include(/cesarepasticceria/include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[02-Aug-2024 05:22:05 UTC] PHP Warning:  include(/cesarepasticceria/include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[02-Aug-2024 05:22:05 UTC] PHP Warning:  include(): Failed opening '/cesarepasticceria/include/parametri.inc' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php on line 6
+[02-Aug-2024 05:38:06 UTC] PHP Warning:  include(/cesarepasticceria/include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[02-Aug-2024 05:38:06 UTC] PHP Warning:  include(/cesarepasticceria/include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[02-Aug-2024 05:38:06 UTC] PHP Warning:  include(): Failed opening '/cesarepasticceria/include/parametri.inc' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php on line 6
+[02-Aug-2024 05:38:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /home/yo613xig/public_html/cesaripasticceria/funzioni.php:268
+Stack trace:
+#0 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(268): mysqli_connect()
+#1 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(57): ApriDatabase()
+#2 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(104): abilitatoUtente()
+#3 /home/yo613xig/public_html/ingrosso.php(12): controllatoken1()
+#4 {main}
+  thrown in /home/yo613xig/public_html/cesaripasticceria/funzioni.php on line 268
+[06-Aug-2024 07:10:20 UTC] PHP Warning:  include(/cesarepasticceria/include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[06-Aug-2024 07:10:20 UTC] PHP Warning:  include(/cesarepasticceria/include/parametri.inc): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 6
+[06-Aug-2024 07:10:20 UTC] PHP Warning:  include(): Failed opening '/cesarepasticceria/include/parametri.inc' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php on line 6
+[06-Aug-2024 07:10:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /home/yo613xig/public_html/cesaripasticceria/funzioni.php:264
+Stack trace:
+#0 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(264): mysqli_connect()
+#1 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(53): ApriDatabase()
+#2 /home/yo613xig/public_html/cesaripasticceria/funzioni.php(100): abilitatoUtente()
+#3 /home/yo613xig/public_html/ingrosso.php(12): controllatoken1()
+#4 {main}
+  thrown in /home/yo613xig/public_html/cesaripasticceria/funzioni.php on line 264
+[06-Aug-2024 07:19:34 UTC] PHP Warning:  require(/home/yo613xig/public_htmlcesaripasticceria/funzioni.php): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 7
+[06-Aug-2024 07:19:34 UTC] PHP Warning:  require(/home/yo613xig/public_htmlcesaripasticceria/funzioni.php): Failed to open stream: No such file or directory in /home/yo613xig/public_html/ingrosso.php on line 7
+[06-Aug-2024 07:19:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yo613xig/public_htmlcesaripasticceria/funzioni.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yo613xig/public_html/ingrosso.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/yo613xig/public_html/ingrosso.php on line 7

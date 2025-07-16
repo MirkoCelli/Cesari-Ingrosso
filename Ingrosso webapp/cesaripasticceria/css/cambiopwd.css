@@ -1,0 +1,71 @@
+html * {
+    font-family: Arial !important;
+}
+
+body {
+    background-color: #e8f6fd;
+    display: flex;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+table {
+    border-spacing: 3vw;
+}
+
+td {
+    height: 8vw; /* 100px; */
+    width: 10vw /* 200px; */    
+}
+
+.container {
+    background-color: #e8f6fd;
+    padding: 30px;
+    margin: auto;
+}
+
+.titoli   {
+   color: blue; 
+   font-size: 3vw; /*200%;*/
+}
+
+.errori {
+   color: red;
+   font-size: 200%;
+}
+
+.edituser {
+   color: black;
+   font-size: 3vw; /* 200%;*/
+   width: 40vw;
+}
+
+.editpws {
+    color: black;
+    font-size: 3vw; /*200%;*/
+    width: 40vw;
+}
+
+.bottoni {
+   color: blue;
+   width: 30vw;
+   height: 9vw;
+   font-size: 4vw; /* 200%; */
+}
+
+.cancelbtn {
+    color: red;
+    width: 30vw;
+    height: 9vw;
+    font-size: 4vw; /* 200%;*/
+}

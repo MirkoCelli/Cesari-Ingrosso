@@ -1,0 +1,172 @@
+﻿body {
+    background-color: ghostwhite;
+    display: flex;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+.Intestazioni {
+    height: 1vw; /* 10%;*/
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Intesta {
+    width: 90%;
+}
+
+.Contenuti {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 10vw; /* 20%;*/
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.MenuComandi {
+    height: 4vw; /* 10%;*/
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 2vw;
+    text-align: center;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.MenuComandi a {
+    font-size: 2vw;
+}
+
+.salva {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.salva2 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.salva input[type=submit] {
+    width: 30vw;
+    height: 10vw;
+    font-size: 3vw;
+}
+
+.salva2 button {
+    width: 30vw;
+    height: 10vw;
+    font-size: 3vw;
+}
+
+td {
+    /*
+    width: 250px;
+    height: 100px;
+    */
+    width: 5%;
+    height: 25%;
+    min-width: 5px;
+    min-height: 50px;
+    max-width: 500px;
+    max-height: 500px;
+    color: #000;
+    /*font-size: 200%;*/
+    font-size: 2vw;
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+    background-color: #6af;
+}
+
+table {
+    width: 90%;
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+input[type=date] {
+    height: 3vw; /*50px;*/
+    line-height: 4vw; /*50px;*/
+    font-size: 2vw;
+    padding: 0 8px;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+    opacity: 1;
+    width: 2vw; /* 64px; */
+    height: 2vw; /* 64px;*/
+    padding: 4px;
+}
+
+input[type=number] {
+    height: 3vw; /*50px;*/
+    /*line-height: 1vw; / * 50px;*/
+    font-size: 3vw;
+    padding: 0 8px;
+    width: 8vw;
+}
+
+.titolo {
+    font-size: 2vw;
+}
+
+.bottone {
+    font-size: 1vw; /* 100%; */
+    height: 4vw; /*50px;*/
+    */ line-height: 2vw; /* 50px;*/
+    padding: 0 8px;
+}
+
+.bottoni {
+    font-size: 1vw; /* 100%; */
+    height: 3vw; /*50px;*/
+    width: 3vw;
+    */ line-height: 2vw; /* 50px;*/
+    /*padding: 0 8px;*/
+}
+
+.quant {
+    width: 10%;
+    font-size: larger;
+}
+
+.openBox {
+    width: 150px; 
+    height:50px;
+    text-align: right;
+    padding: 0 15px;
+    font-size: 2vw;
+}
+
+.framenascosto {
+    width: 0%; 
+    height: 0%; 
+    visibility: hidden;"
+}
+
+.framemostrato {
+    width: 90%;
+    height: 60%;
+    visibility: visible;
+}
